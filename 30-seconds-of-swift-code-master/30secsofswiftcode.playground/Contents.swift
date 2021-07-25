@@ -22,19 +22,20 @@ func bubbleSort(_ inputArr:[Int]) -> [Int] {
     return res
 }
 bubbleSort([32,12,12,23,11,19,81,76]) //[11, 12, 12, 19, 23, 32, 76, 81]
-
+//1보다 8이크면 inputArr를 리턴한다. 32,12,12,23,11,19,81,7 res에 32,12,12,23,11,19,81,7 저장 count는 8
+//인덱스는 8의 1바이트부터 1바이트까지 반복 만약 32,12,12,23,11,19,81,7 이 32,12,12,23,11,19,81,7 1을 뺀값보다 작다면 1을 뺀값과 안뺀값을 교환 불린값을 통해서 isSwapped가 모두 false만 나올때 까지 반복
 func bubleSort1(_ inputArr:[Int]) -> [Int] {
-    guard inputArr.count > 1 else {//Arr 배열수 가 1을 초과 할시 inputArr 출력 //음수배제?
+    guard inputArr.count > 1 else {//Arr 배열수 가 1을 초과 할시 inputArr 출력 //음수배제?//
         return inputArr
     }
-    var res = inputArr
-    let count = res.count
-    var isSwapped = false
-    repeat {
-        for index in stride(from: 1, to: count, by: 1) {
-            if res[index] < res[index - 1] {
-                res.swapAt((index - 1), index)
-                isSwapped = true
+    var res = inputArr//res에 inputArr 저장
+    let count = res.count //count에 resArr의 배열 숫자 저장
+    var isSwapped = false // isSwapped bool 저장
+    repeat {//반복문을 통과한 끝에서 조건을 평가
+        for index in stride(from: 1, to: count, by: 1) {// 1 에서 부터 카운트 숫자만큼 반복
+            if res[index] < res[index - 1] {//resArr의 숫자가 resArr의 1을 뺀값이 크다면
+                res.swapAt((index - 1), index)//resArr에 index-1 값과 index를 교환합니다
+                isSwapped = true //bool 값을 트루로 전달
             }
         }
     }while isSwapped
