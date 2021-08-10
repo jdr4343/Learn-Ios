@@ -13,9 +13,11 @@
 		4090DA2526C2552400668184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4090DA2326C2552400668184 /* Main.storyboard */; };
 		4090DA2726C2552600668184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4090DA2626C2552600668184 /* Assets.xcassets */; };
 		4090DA2A26C2552600668184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4090DA2826C2552600668184 /* LaunchScreen.storyboard */; };
+		DE3FCAC44DA9B73386A40575 /* Pods_PhotoVideoShot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FC0EB716F5D7F6EEE1BB09 /* Pods_PhotoVideoShot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D32F29F67BC2789BF2801E2 /* Pods-PhotoVideoShot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVideoShot.release.xcconfig"; path = "Target Support Files/Pods-PhotoVideoShot/Pods-PhotoVideoShot.release.xcconfig"; sourceTree = "<group>"; };
 		4090DA1A26C2552400668184 /* PhotoVideoShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVideoShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4090DA1D26C2552400668184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4090DA1F26C2552400668184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4090DA2626C2552600668184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4090DA2926C2552600668184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4090DA2B26C2552600668184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0ADEEDC961C7CB20D6C839 /* Pods-PhotoVideoShot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoVideoShot.debug.xcconfig"; path = "Target Support Files/Pods-PhotoVideoShot/Pods-PhotoVideoShot.debug.xcconfig"; sourceTree = "<group>"; };
+		F2FC0EB716F5D7F6EEE1BB09 /* Pods_PhotoVideoShot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoVideoShot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3FCAC44DA9B73386A40575 /* Pods_PhotoVideoShot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4090DA1C26C2552400668184 /* PhotoVideoShot */,
 				4090DA1B26C2552400668184 /* Products */,
+				7F42B37406E7CF2AD565A6A5 /* Pods */,
+				F1CF0728EB9F8C4155B46E96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = PhotoVideoShot;
 			sourceTree = "<group>";
 		};
+		7F42B37406E7CF2AD565A6A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC0ADEEDC961C7CB20D6C839 /* Pods-PhotoVideoShot.debug.xcconfig */,
+				0D32F29F67BC2789BF2801E2 /* Pods-PhotoVideoShot.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1CF0728EB9F8C4155B46E96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2FC0EB716F5D7F6EEE1BB09 /* Pods_PhotoVideoShot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4090DA2E26C2552600668184 /* Build configuration list for PBXNativeTarget "PhotoVideoShot" */;
 			buildPhases = (
+				67E9D1F3B0831A6A3C0EB377 /* [CP] Check Pods Manifest.lock */,
 				4090DA1626C2552400668184 /* Sources */,
 				4090DA1726C2552400668184 /* Frameworks */,
 				4090DA1826C2552400668184 /* Resources */,
+				6CB124EC0A69A9C9D6833847 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67E9D1F3B0831A6A3C0EB377 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoVideoShot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CB124EC0A69A9C9D6833847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoVideoShot/Pods-PhotoVideoShot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoVideoShot/Pods-PhotoVideoShot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoVideoShot/Pods-PhotoVideoShot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4090DA1626C2552400668184 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		4090DA2F26C2552600668184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0ADEEDC961C7CB20D6C839 /* Pods-PhotoVideoShot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		4090DA3026C2552600668184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D32F29F67BC2789BF2801E2 /* Pods-PhotoVideoShot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
