@@ -43,8 +43,8 @@ class ViewController: UIViewController {
                     print(photo.fromCamera) // Image source (camera or library)
                     print(photo.image) // Final image selected by the user
                     print(photo.originalImage) // original image selected by the user, unfiltered
-                    print(photo.modifiedImage) // Transformed image, can be nil
-                    print(photo.exifMeta) // Print exif meta data of original image.
+                    print(photo.modifiedImage as Any) // Transformed image, can be nil
+                    print(photo.exifMeta as Any) // Print exif meta data of original image.
                     //프사 이미지 변경
                     self.profileImage.image = photo.image
                 }
