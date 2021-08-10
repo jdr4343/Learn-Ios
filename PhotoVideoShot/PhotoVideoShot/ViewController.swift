@@ -32,6 +32,7 @@ class ViewController: UIViewController {
             //카메라 라이브러리 설정
             var config = YPImagePickerConfiguration()
             config.screens = [.library, .video, .photo]
+            
            
 
 
