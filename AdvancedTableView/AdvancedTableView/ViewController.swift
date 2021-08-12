@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -28,9 +29,31 @@ class ViewController: UIViewController {
         setUpModels()
         
         view.addSubview(table)
+        table.tableHeaderView = createTableHeader()
         table.delegate = self
         table.dataSource = self
+        
     }
+    
+    //헤더에 비디오 추가 /avFoundation을 통해 경로를 파일의 경로를 얻겠습니다.
+    private func createTableHeader() -> UIView? {
+        guard let path = Bundle.main.path(forResource: "video", ofType: "mp4") else {
+            print("fatalError")
+            return nil
+        }
+        let url = URL(fileURLWithPath: path)
+        let player = AVPlayer(url: url)
+        player.volume = 0
+        let headerView = UIView(frame: CGRect(x: 0, y: 0,
+                                              width: view.frame.size.width, height: view.frame.size.width))
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = headerView.bounds
+        headerView.layer.addSublayer(playerLayer)
+        playerLayer.videoGravity = .resizeAspectFill
+        player.play()
+        return headerView
+    }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -103,14 +126,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case .list(_):
             return 50
         case .collectionView(_, let rows):
-            return 180 * CGFloat(rows)
+            return 185 * CGFloat(rows)
         }
     }
     
 }
+//각 셀에 delegate를 연결하고 하나를 탭할때 delegate를 통해 릴링하기 때문에 적절한 항목이 인쇄됩니다.
 extension ViewController: CollectionTableViewCellDelegate {
     func didSelectItem(with model: CollectionTableCellModel) {
-        <#code#>
+        print("Selected \(model.title) ")
     }
     
     
