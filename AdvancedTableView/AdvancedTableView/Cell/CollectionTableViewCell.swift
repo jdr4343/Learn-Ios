@@ -7,8 +7,17 @@
 
 import UIKit
 
+//델리게이트
+protocol CollectionTableViewCellDelegate: AnyObject {
+    func didSelectItem(with model: CollectionTableCellModel)
+}
+
+
+
 class CollectionTableViewCell: UITableViewCell {
 
+    public weak var delegate: CollectionTableViewCellDelegate?
+    
     static let identifier = "CollectionTableViewCell"
     //컬렉션 뷰 생성 /이니셜라이저에서 설정
     private let collectionView: UICollectionView
@@ -65,11 +74,15 @@ extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let model = models[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TableCollectionViewCell.identifier, for: indexPath) as! TableCollectionViewCell
+        cell.configure(with: model)
         return cell
     }
     //선택
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        let model = models[indexPath.row]
+        //사용자가 컬렉션 보기 셀 중 하나를 선택할 때마다. Delegate를 활용할 것입니다.
+        delegate?.didSelectItem(with: model)
     }
     
     

@@ -67,8 +67,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         switch models[section] {
         case .list(let models):
             return models.count
-        case .collectionView(let models, _):
-            return models.count
+        case .collectionView(_, _):
+            return 1
         }
     }
     //셀 위치
@@ -81,8 +81,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
             
         case .collectionView(let models, _):
-            let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as! CollectionTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier,
+                                                     for: indexPath) as! CollectionTableViewCell
             cell.configure(with: models)
+            cell.delegate = self
             return cell
         }
         
@@ -93,10 +95,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     //셀 클릭
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        print("Did select normal list item")
     }
     //셀높이
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        switch models[indexPath.section] {
+        case .list(_):
+            return 50
+        case .collectionView(_, let rows):
+            return 180 * CGFloat(rows)
+        }
     }
+    
+}
+extension ViewController: CollectionTableViewCellDelegate {
+    func didSelectItem(with model: CollectionTableCellModel) {
+        <#code#>
+    }
+    
     
 }
