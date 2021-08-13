@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController,UITextFieldDelegate {
 
     //@IBOulet
     @IBOutlet var titleField: UITextField!
@@ -20,8 +20,13 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //엔터키를 눌렀을떄 자동으로 키보드 닫기 기능을 위해 델리게이트 설정
+        titleField.delegate = self
+        bodyField.delegate = self
+        
         //네비게이션 바버튼 추가
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "저장 ", style: .done, target: self, action: #selector(didTapSaveButton))
+        
 
         
     }
@@ -36,6 +41,11 @@ class AddViewController: UIViewController {
             completion?(titleText, bodyText, targetDate)
         }
         
+    }
+    //엔터키 자동 딛기 기능 구현
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 
