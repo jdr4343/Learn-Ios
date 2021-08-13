@@ -14,6 +14,7 @@
 		40969C6826C60F5D00DBE2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40969C6726C60F5D00DBE2EF /* Assets.xcassets */; };
 		40969C6B26C60F5D00DBE2EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40969C6926C60F5D00DBE2EF /* LaunchScreen.storyboard */; };
 		40969C7326C6105D00DBE2EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40969C7226C6105D00DBE2EF /* Model.swift */; };
+		40969C7526C6157500DBE2EF /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40969C7426C6157500DBE2EF /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		40969C6A26C60F5D00DBE2EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40969C6C26C60F5D00DBE2EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40969C7226C6105D00DBE2EF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		40969C7426C6157500DBE2EF /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				40969C5E26C60F5B00DBE2EF /* AppDelegate.swift */,
 				40969C6026C60F5B00DBE2EF /* SceneDelegate.swift */,
-				40969C6226C60F5B00DBE2EF /* ViewController.swift */,
 				40969C6426C60F5B00DBE2EF /* Main.storyboard */,
 				40969C6726C60F5D00DBE2EF /* Assets.xcassets */,
 				40969C6926C60F5D00DBE2EF /* LaunchScreen.storyboard */,
 				40969C6C26C60F5D00DBE2EF /* Info.plist */,
+				40969C6226C60F5B00DBE2EF /* ViewController.swift */,
 				40969C7226C6105D00DBE2EF /* Model.swift */,
+				40969C7426C6157500DBE2EF /* AddViewController.swift */,
 			);
 			path = AlarmReminder;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40969C7526C6157500DBE2EF /* AddViewController.swift in Sources */,
 				40969C6326C60F5B00DBE2EF /* ViewController.swift in Sources */,
 				40969C5F26C60F5B00DBE2EF /* AppDelegate.swift in Sources */,
 				40969C6126C60F5B00DBE2EF /* SceneDelegate.swift in Sources */,

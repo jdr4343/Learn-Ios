@@ -1,24 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f5E-zC-H87">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--알람-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlarmReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ee0-au-Lgc">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ee0-au-Lgc" secondAttribute="trailing" id="Bb9-NL-hCT"/>
+                            <constraint firstItem="Ee0-au-Lgc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NhG-Pg-ARc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ee0-au-Lgc" secondAttribute="bottom" id="QTY-zu-ABA"/>
+                            <constraint firstItem="Ee0-au-Lgc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sug-Hj-MrX"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="알람" id="F6R-xz-cAe">
+                        <barButtonItem key="leftBarButtonItem" title="Test" id="Kt5-lJ-hwe">
+                            <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="didTapTest" destination="BYZ-38-t0r" id="gMn-PT-bvH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CxE-TA-Lqo">
+                            <color key="tintColor" systemColor="linkColor"/>
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="KsB-Ls-rGU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="Ee0-au-Lgc" id="xzd-HA-Azm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="137.94642857142856"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="S7q-2p-5WJ">
+            <objects>
+                <viewController storyboardIdentifier="add" id="qR6-P7-7fV" customClass="AddViewController" customModule="AlarmReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rca-5x-3Ys">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1P9-eL-2ES">
+                                <rect key="frame" x="20" y="84" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="gCl-HG-ck5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="내용 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="okd-nA-wZM">
+                                <rect key="frame" x="20" y="156" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="BZY-5r-12z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xiX-x0-Uao">
+                                <rect key="frame" x="0.0" y="238" width="414" height="604"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BKk-MP-zCG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1P9-eL-2ES" firstAttribute="leading" secondItem="BKk-MP-zCG" secondAttribute="leading" constant="20" id="8Nc-qj-yPQ"/>
+                            <constraint firstItem="BKk-MP-zCG" firstAttribute="trailing" secondItem="1P9-eL-2ES" secondAttribute="trailing" constant="20" id="JxY-uo-5ZV"/>
+                            <constraint firstItem="1P9-eL-2ES" firstAttribute="top" secondItem="BKk-MP-zCG" secondAttribute="top" constant="40" id="NcN-St-7XY"/>
+                            <constraint firstItem="okd-nA-wZM" firstAttribute="leading" secondItem="BKk-MP-zCG" secondAttribute="leading" constant="20" id="Qtq-mN-Rtc"/>
+                            <constraint firstItem="BKk-MP-zCG" firstAttribute="bottom" secondItem="xiX-x0-Uao" secondAttribute="bottom" constant="20" id="VMV-1D-Hty"/>
+                            <constraint firstItem="okd-nA-wZM" firstAttribute="top" secondItem="1P9-eL-2ES" secondAttribute="bottom" constant="20" id="WrT-Oo-OWU"/>
+                            <constraint firstItem="xiX-x0-Uao" firstAttribute="leading" secondItem="BKk-MP-zCG" secondAttribute="leading" id="biW-fv-eBq"/>
+                            <constraint firstItem="BKk-MP-zCG" firstAttribute="trailing" secondItem="okd-nA-wZM" secondAttribute="trailing" constant="20" id="iMx-64-MI0"/>
+                            <constraint firstItem="BKk-MP-zCG" firstAttribute="trailing" secondItem="xiX-x0-Uao" secondAttribute="trailing" id="jyd-Rz-Dea"/>
+                            <constraint firstItem="xiX-x0-Uao" firstAttribute="top" secondItem="okd-nA-wZM" secondAttribute="bottom" constant="30" id="mZQ-XS-1ee"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyField" destination="okd-nA-wZM" id="MB7-AX-Wvq"/>
+                        <outlet property="datePicker" destination="xiX-x0-Uao" id="4V5-cx-nG8"/>
+                        <outlet property="titleField" destination="1P9-eL-2ES" id="iij-sb-ssu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZT-Xq-JWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DU4-cY-OAx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f5E-zC-H87" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="t9W-y5-PuV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XQr-lJ-pGR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXB-wD-gTP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
