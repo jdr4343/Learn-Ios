@@ -1,24 +1,24 @@
 PODS:
-  - LiquidFloatingActionButton (1.2.0)
+  - Floaty (4.2.0)
   - pop (1.0.12)
   - VBFPopFlatButton (0.0.7):
     - pop
 
 DEPENDENCIES:
-  - LiquidFloatingActionButton
+  - Floaty
   - VBFPopFlatButton
 
 SPEC REPOS:
   trunk:
-    - LiquidFloatingActionButton
+    - Floaty
     - pop
     - VBFPopFlatButton
 
 SPEC CHECKSUMS:
-  LiquidFloatingActionButton: 9c28961915754e08cf596ea6bdd60f9cd949f172
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   VBFPopFlatButton: 39e48ab56277f3d056734a9b5ec5d0cc60d69778
 
-PODFILE CHECKSUM: b923e399679335139456ebbd523b72f171228aac
+PODFILE CHECKSUM: 11e5d7f53101562d3d903e2cd123bb5809c923eb
 
 COCOAPODS: 1.10.1
