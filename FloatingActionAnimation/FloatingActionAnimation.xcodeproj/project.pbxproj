@@ -13,6 +13,7 @@
 		4081CB1F26C8FC9700536B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4081CB1D26C8FC9700536B5F /* Main.storyboard */; };
 		4081CB2126C8FC9900536B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4081CB2026C8FC9900536B5F /* Assets.xcassets */; };
 		4081CB2426C8FC9900536B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4081CB2226C8FC9900536B5F /* LaunchScreen.storyboard */; };
+		7EAE18FF38EBB19CC17411F5 /* Pods_FloatingActionAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF56674B69808D8C2F02D4E /* Pods_FloatingActionAnimation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		4081CB2026C8FC9900536B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4081CB2326C8FC9900536B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4081CB2526C8FC9900536B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747F236C08E27FF0E8049840 /* Pods-FloatingActionAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingActionAnimation.debug.xcconfig"; path = "Target Support Files/Pods-FloatingActionAnimation/Pods-FloatingActionAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		9359F8A0A770F2A43E1391BE /* Pods-FloatingActionAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingActionAnimation.release.xcconfig"; path = "Target Support Files/Pods-FloatingActionAnimation/Pods-FloatingActionAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		BFF56674B69808D8C2F02D4E /* Pods_FloatingActionAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingActionAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EAE18FF38EBB19CC17411F5 /* Pods_FloatingActionAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F95EF953E9E999E6925D4C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				747F236C08E27FF0E8049840 /* Pods-FloatingActionAnimation.debug.xcconfig */,
+				9359F8A0A770F2A43E1391BE /* Pods-FloatingActionAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4081CB0B26C8FC9700536B5F = {
 			isa = PBXGroup;
 			children = (
 				4081CB1626C8FC9700536B5F /* FloatingActionAnimation */,
 				4081CB1526C8FC9700536B5F /* Products */,
+				3F95EF953E9E999E6925D4C5 /* Pods */,
+				AC93A79827A176C34FABBE97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = FloatingActionAnimation;
 			sourceTree = "<group>";
 		};
+		AC93A79827A176C34FABBE97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF56674B69808D8C2F02D4E /* Pods_FloatingActionAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4081CB2826C8FC9900536B5F /* Build configuration list for PBXNativeTarget "FloatingActionAnimation" */;
 			buildPhases = (
+				601F8187E7BD2B193D7940D3 /* [CP] Check Pods Manifest.lock */,
 				4081CB1026C8FC9700536B5F /* Sources */,
 				4081CB1126C8FC9700536B5F /* Frameworks */,
 				4081CB1226C8FC9700536B5F /* Resources */,
+				1AB3E56CA7341613831C87DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB3E56CA7341613831C87DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloatingActionAnimation/Pods-FloatingActionAnimation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloatingActionAnimation/Pods-FloatingActionAnimation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FloatingActionAnimation/Pods-FloatingActionAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		601F8187E7BD2B193D7940D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FloatingActionAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4081CB1026C8FC9700536B5F /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		4081CB2926C8FC9900536B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747F236C08E27FF0E8049840 /* Pods-FloatingActionAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		4081CB2A26C8FC9900536B5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9359F8A0A770F2A43E1391BE /* Pods-FloatingActionAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
