@@ -1,24 +1,16 @@
 PODS:
   - Floaty (4.2.0)
-  - pop (1.0.12)
-  - VBFPopFlatButton (0.0.7):
-    - pop
 
 DEPENDENCIES:
   - Floaty
-  - VBFPopFlatButton
 
 SPEC REPOS:
   trunk:
     - Floaty
-    - pop
-    - VBFPopFlatButton
 
 SPEC CHECKSUMS:
   Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
-  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
-  VBFPopFlatButton: 39e48ab56277f3d056734a9b5ec5d0cc60d69778
 
-PODFILE CHECKSUM: 11e5d7f53101562d3d903e2cd123bb5809c923eb
+PODFILE CHECKSUM: e2c1d837c4bce0db6b4898aa6ac2986a2f606622
 
 COCOAPODS: 1.10.1

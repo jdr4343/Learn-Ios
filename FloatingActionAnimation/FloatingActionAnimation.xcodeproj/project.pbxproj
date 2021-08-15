@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4035024026C988EF004BD348 /* SempleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4035023F26C988EF004BD348 /* SempleViewController.swift */; };
 		4081CB1826C8FC9700536B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081CB1726C8FC9700536B5F /* AppDelegate.swift */; };
 		4081CB1A26C8FC9700536B5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081CB1926C8FC9700536B5F /* SceneDelegate.swift */; };
 		4081CB1C26C8FC9700536B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081CB1B26C8FC9700536B5F /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4035023F26C988EF004BD348 /* SempleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SempleViewController.swift; sourceTree = "<group>"; };
 		4081CB1426C8FC9700536B5F /* FloatingActionAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingActionAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4081CB1726C8FC9700536B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4081CB1926C8FC9700536B5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				747F236C08E27FF0E8049840 /* Pods-FloatingActionAnimation.debug.xcconfig */,
 				9359F8A0A770F2A43E1391BE /* Pods-FloatingActionAnimation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +81,7 @@
 				4081CB2026C8FC9900536B5F /* Assets.xcassets */,
 				4081CB2226C8FC9900536B5F /* LaunchScreen.storyboard */,
 				4081CB2526C8FC9900536B5F /* Info.plist */,
+				4035023F26C988EF004BD348 /* SempleViewController.swift */,
 			);
 			path = FloatingActionAnimation;
 			sourceTree = "<group>";
@@ -208,6 +210,7 @@
 			files = (
 				4081CB1C26C8FC9700536B5F /* ViewController.swift in Sources */,
 				4081CB1826C8FC9700536B5F /* AppDelegate.swift in Sources */,
+				4035024026C988EF004BD348 /* SempleViewController.swift in Sources */,
 				4081CB1A26C8FC9700536B5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
