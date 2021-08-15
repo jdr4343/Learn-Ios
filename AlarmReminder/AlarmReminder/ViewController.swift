@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         table.dataSource = self
     }
     
-    
+  
     
     //버튼 액션
     @IBAction func didTapAdd() {
