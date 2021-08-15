@@ -7,24 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C457F81F4F3965726D482E9F1EBF7D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		1FE2D19EF790109C3C32CEBBD18D4984 /* UIView+Draggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA9C00681793849DEE10741D7C2DA2 /* UIView+Draggable.swift */; };
-		39CC38779B3593A7C5A067041E789B5D /* Floaty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8053B05B5FD6835E6B5C90D8FE153D98 /* Floaty-dummy.m */; };
-		51CEDBB81DC3B424153D40E1D6D2C974 /* Pods-FloatingActionAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 667A247F84253ED44FA21EA5B5E359D7 /* Pods-FloatingActionAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A2F136CC06B047188F944FE881C48CE /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8C2AC86F1A705D6A0065D5E3867A2 /* FloatyViewController.swift */; };
-		8C40574E60CBD4DD5A0DE79C5D3F39D3 /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8365BEC3FD32E0CC0F33EDA7B468CE4A /* FloatyWindow.swift */; };
-		8E81DCC864B08EADB6405EE39DD225A8 /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E2D89DA9C9C4E6B5CF06F68749CD2 /* Floaty.swift */; };
-		AB2E5D7EFC25BE3964B41BB532BC8753 /* Pods-FloatingActionAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47441166E11E8894175957263FA51C32 /* Pods-FloatingActionAnimation-dummy.m */; };
-		AF49D749CAE965784D16E579C94EACB1 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F7D296A55B38B440AFA00E908E50F /* FloatyDelegate.swift */; };
-		C404585543BB15A332A69776F7F5B71C /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F5640C34608FFDAAE3BEB5FC3A532 /* FloatyItem.swift */; };
-		CCF844187199745A1DECB644BD844941 /* Floaty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF742238CFAA76AD1586D8445C7424BB /* Floaty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D29B80E3F0E0B6459DC7E33AF140CA /* WCLShineClickLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF15FEAECF1E92988222C7B47E3926 /* WCLShineClickLayer.swift */; };
+		1FE2D19EF790109C3C32CEBBD18D4984 /* UIView+Draggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DC366C5994ACCD2B3A5020CD8248A /* UIView+Draggable.swift */; };
+		205729B4AF44304859D69C642726E51E /* WCLShineParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1DE026421728F3A325B1459A10F17 /* WCLShineParams.swift */; };
+		23D6EC0C91CBAA5E1FFBF2EB30982EBD /* WCLShineButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78E46C16CE36502DB1F7BFE7F3447B0C /* WCLShineButton.bundle */; };
+		2D4CE826AAF54800F10C49417CA4C78B /* Pods-FloatingActionAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 667A247F84253ED44FA21EA5B5E359D7 /* Pods-FloatingActionAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39CC38779B3593A7C5A067041E789B5D /* Floaty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13029A04F29586184CE9EC08C327F763 /* Floaty-dummy.m */; };
+		42719F081F577389CD7F0303C99F8D94 /* WCLShineButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6A74E37A1FFF0849793F92B290D3B3 /* WCLShineButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A2F136CC06B047188F944FE881C48CE /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C593D44A000A518FF96294D8B8F4C0E /* FloatyViewController.swift */; };
+		7F91E347D1CDCC342F28CE918CCE71E7 /* WCLShineBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A789F4C509421D77413B15B154CF1A /* WCLShineBundle.swift */; };
+		82FD19E901B1CA44502C6D11812982E1 /* WCLShineAngleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867563486AC237254C88B5CE7555E63 /* WCLShineAngleLayer.swift */; };
+		8319F032C30E865BB82260208EF0F346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		8C40574E60CBD4DD5A0DE79C5D3F39D3 /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F267D6AA92CA266EC4783069BCDFE32 /* FloatyWindow.swift */; };
+		8C8B6FA1A214E7C14E99C9AD49E59BA0 /* WCLShineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D33748586CBEE48BFDAAA97BD9A7D0 /* WCLShineButton.swift */; };
+		8E81DCC864B08EADB6405EE39DD225A8 /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906745FD63241D24B5A8D7AA5DD1235 /* Floaty.swift */; };
+		A47D4CB1B13EB0835DCB4CE698B4E3BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		AF49D749CAE965784D16E579C94EACB1 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01CB349FB425701A2D6EC8159DDE01 /* FloatyDelegate.swift */; };
+		C404585543BB15A332A69776F7F5B71C /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A427F9DF1EC654C5AB5BB7433F67BD0 /* FloatyItem.swift */; };
+		CCF844187199745A1DECB644BD844941 /* Floaty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 111AA0D6871B322D89A2E4D5FEDEA5C9 /* Floaty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D032EBC14F7C7AA19AE66CFD3EB76347 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		D7D702E98AC1E133E09F5B6C2A54A6CF /* WCLShineButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B66A121A714893BA20502B369B5A7E /* WCLShineButton-dummy.m */; };
 		EBCACFA549545A344688C3E088DC8BD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		F23A86404C2D998825C8A071885323B7 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391585BE75022227AA204C278409A3B /* FloatyManager.swift */; };
+		EC3E9858A70131522B060F0016FA4374 /* WCLShineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B28297623C5E61B9DDA40248382B7E /* WCLShineLayer.swift */; };
+		F23A86404C2D998825C8A071885323B7 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A876ADEA12B080326108BC9BB65AD03 /* FloatyManager.swift */; };
+		FDEF00E17FAA225709171278A25ECADC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		FECC6BF6FDD1B72BC614DB0234E6849E /* Pods-FloatingActionAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47441166E11E8894175957263FA51C32 /* Pods-FloatingActionAnimation-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84C4DC8E7CCA63190B7625DC31B0EA1D /* PBXContainerItemProxy */ = {
+		D2246C083737CE9EEDB68900E2C7CA5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C83993C8F5EFBE2ED74A821934C595E9;
+			remoteInfo = WCLShineButton;
+		};
+		F8D33CF43525F5BABFA630A0E7A47943 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -34,42 +52,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		098814983BC053555A485F9F0FE788DC /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WCLShineButton.framework; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED1DE026421728F3A325B1459A10F17 /* WCLShineParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineParams.swift; path = WCLShineButton/WCLShineParams.swift; sourceTree = "<group>"; };
 		0FFC60DDA1808121146D54C9A9DF624F /* Pods_FloatingActionAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FloatingActionAnimation.framework; path = "Pods-FloatingActionAnimation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27042E2F2C36187E70B2ADA606B6B58B /* Floaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.debug.xcconfig; sourceTree = "<group>"; };
+		111AA0D6871B322D89A2E4D5FEDEA5C9 /* Floaty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-umbrella.h"; sourceTree = "<group>"; };
+		13029A04F29586184CE9EC08C327F763 /* Floaty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Floaty-dummy.m"; sourceTree = "<group>"; };
+		1A876ADEA12B080326108BC9BB65AD03 /* FloatyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		1C593D44A000A518FF96294D8B8F4C0E /* FloatyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
+		25D33748586CBEE48BFDAAA97BD9A7D0 /* WCLShineButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineButton.swift; path = WCLShineButton/WCLShineButton.swift; sourceTree = "<group>"; };
 		2915C263A5C5C8012A8C1E97512DC6A8 /* Floaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Floaty.framework; path = Floaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		303E2D89DA9C9C4E6B5CF06F68749CD2 /* Floaty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
-		35A193D1D8788F2AE65031933487D3C2 /* Floaty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-prefix.pch"; sourceTree = "<group>"; };
+		2B9DC366C5994ACCD2B3A5020CD8248A /* UIView+Draggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Draggable.swift"; path = "Sources/UIView+Draggable.swift"; sourceTree = "<group>"; };
+		2F98B639968AFBCD223332780CF86520 /* Floaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.release.xcconfig; sourceTree = "<group>"; };
+		3E01CB349FB425701A2D6EC8159DDE01 /* FloatyDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
+		41AF15FEAECF1E92988222C7B47E3926 /* WCLShineClickLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineClickLayer.swift; path = WCLShineButton/WCLShineClickLayer.swift; sourceTree = "<group>"; };
 		47441166E11E8894175957263FA51C32 /* Pods-FloatingActionAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FloatingActionAnimation-dummy.m"; sourceTree = "<group>"; };
+		4A427F9DF1EC654C5AB5BB7433F67BD0 /* FloatyItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
 		4A7D4CFBB6ECB7A004291330A00084B1 /* Pods-FloatingActionAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FloatingActionAnimation.modulemap"; sourceTree = "<group>"; };
+		4F600399A30A902EA6B75755A3F89778 /* Floaty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-prefix.pch"; sourceTree = "<group>"; };
 		55A1807FB0DD9621FC6C9539DA5B556D /* Pods-FloatingActionAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingActionAnimation.debug.xcconfig"; sourceTree = "<group>"; };
-		6391585BE75022227AA204C278409A3B /* FloatyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		5D95DEBCC07BEB39E01CE90C7947C00B /* WCLShineButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WCLShineButton-Info.plist"; sourceTree = "<group>"; };
+		65D05A59CB67281E5FA45631B8AC2E52 /* WCLShineButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCLShineButton.debug.xcconfig; sourceTree = "<group>"; };
 		667A247F84253ED44FA21EA5B5E359D7 /* Pods-FloatingActionAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FloatingActionAnimation-umbrella.h"; sourceTree = "<group>"; };
-		8053B05B5FD6835E6B5C90D8FE153D98 /* Floaty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Floaty-dummy.m"; sourceTree = "<group>"; };
-		8365BEC3FD32E0CC0F33EDA7B468CE4A /* FloatyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
-		8A2DA0C540AE31E662B3CBAF6ABBD75C /* Floaty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Floaty-Info.plist"; sourceTree = "<group>"; };
-		8EF8C2AC86F1A705D6A0065D5E3867A2 /* FloatyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
+		6B3CF9D15838643B73BBC69A1ED82660 /* WCLShineButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCLShineButton.modulemap; sourceTree = "<group>"; };
+		6F267D6AA92CA266EC4783069BCDFE32 /* FloatyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
+		78E46C16CE36502DB1F7BFE7F3447B0C /* WCLShineButton.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WCLShineButton.bundle; path = WCLShineButton/WCLShineButton.bundle; sourceTree = "<group>"; };
+		7960EE5F1825C9D3F674F0EE2B06F311 /* Floaty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Floaty.modulemap; sourceTree = "<group>"; };
+		8D6A74E37A1FFF0849793F92B290D3B3 /* WCLShineButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-umbrella.h"; sourceTree = "<group>"; };
+		8E6A13C4261F6601DFDC4E9ABE30D041 /* Floaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.debug.xcconfig; sourceTree = "<group>"; };
 		90A367CABD2224A3884A79C2A26D11DA /* Pods-FloatingActionAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingActionAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		995CA6BFAFB30227A14AA50C65B8CD02 /* Pods-FloatingActionAnimation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingActionAnimation-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0FF91CCD2F4E224CBD6ABCB1AD52E9D /* WCLShineButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCLShineButton.release.xcconfig; sourceTree = "<group>"; };
+		B76040452477A778243152E75397AE6D /* WCLShineButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-prefix.pch"; sourceTree = "<group>"; };
 		BB1806814361A05F27EFF757CDF36BBE /* Pods-FloatingActionAnimation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatingActionAnimation-frameworks.sh"; sourceTree = "<group>"; };
 		C7DED847353526470CC959F9D5418505 /* Pods-FloatingActionAnimation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingActionAnimation-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE5E2F6958F851E2FC02CFBDDBDA2E0E /* Pods-FloatingActionAnimation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FloatingActionAnimation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D23A193F0557B55205BC7793E6F51F77 /* Floaty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Floaty-Info.plist"; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D28F7D296A55B38B440AFA00E908E50F /* FloatyDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
-		D6715BAB82402C5559BF82F58940E91B /* Floaty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Floaty.modulemap; sourceTree = "<group>"; };
-		E2EA9C00681793849DEE10741D7C2DA2 /* UIView+Draggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Draggable.swift"; path = "Sources/UIView+Draggable.swift"; sourceTree = "<group>"; };
+		D4B66A121A714893BA20502B369B5A7E /* WCLShineButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCLShineButton-dummy.m"; sourceTree = "<group>"; };
+		D867563486AC237254C88B5CE7555E63 /* WCLShineAngleLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineAngleLayer.swift; path = WCLShineButton/WCLShineAngleLayer.swift; sourceTree = "<group>"; };
+		E906745FD63241D24B5A8D7AA5DD1235 /* Floaty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EF742238CFAA76AD1586D8445C7424BB /* Floaty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-umbrella.h"; sourceTree = "<group>"; };
-		EFA0593E89DE2372F7146A9E2B435ED1 /* Floaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.release.xcconfig; sourceTree = "<group>"; };
-		F88F5640C34608FFDAAE3BEB5FC3A532 /* FloatyItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
+		F1A789F4C509421D77413B15B154CF1A /* WCLShineBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineBundle.swift; path = WCLShineButton/WCLShineBundle.swift; sourceTree = "<group>"; };
+		F8B28297623C5E61B9DDA40248382B7E /* WCLShineLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineLayer.swift; path = WCLShineButton/WCLShineLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5BA502253E579270F72DE373D76F938D /* Frameworks */ = {
+		288212C53407592DACBF77469C43489F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C457F81F4F3965726D482E9F1EBF7D7 /* Foundation.framework in Frameworks */,
+				8319F032C30E865BB82260208EF0F346 /* Foundation.framework in Frameworks */,
+				A47D4CB1B13EB0835DCB4CE698B4E3BD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,30 +116,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACA7B7180A9482FF84EE25FAACE7E647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEF00E17FAA225709171278A25ECADC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04CFD3CC0A8AD568E4ADC944CD387D80 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D6715BAB82402C5559BF82F58940E91B /* Floaty.modulemap */,
-				8053B05B5FD6835E6B5C90D8FE153D98 /* Floaty-dummy.m */,
-				8A2DA0C540AE31E662B3CBAF6ABBD75C /* Floaty-Info.plist */,
-				35A193D1D8788F2AE65031933487D3C2 /* Floaty-prefix.pch */,
-				EF742238CFAA76AD1586D8445C7424BB /* Floaty-umbrella.h */,
-				27042E2F2C36187E70B2ADA606B6B58B /* Floaty.debug.xcconfig */,
-				EFA0593E89DE2372F7146A9E2B435ED1 /* Floaty.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Floaty";
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3641653D48F71C8D1CEF52988C84579C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78E46C16CE36502DB1F7BFE7F3447B0C /* WCLShineButton.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3BE7A3AF900ECAEF9C17D5D7F267F8D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7628AE9919EF2773E71109BA177CBF4 /* Floaty */,
+				6C02AFDB107EB8601F2DD1226111F3DE /* WCLShineButton */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -125,12 +169,60 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		696980B28CB5E0494BE0AA6F2ECCAE4F /* Pods */ = {
+		5E72C35D46C1CAFF62183EABB21A6A29 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F124E2D716358CD0C9159569DD013B35 /* Floaty */,
+				6B3CF9D15838643B73BBC69A1ED82660 /* WCLShineButton.modulemap */,
+				D4B66A121A714893BA20502B369B5A7E /* WCLShineButton-dummy.m */,
+				5D95DEBCC07BEB39E01CE90C7947C00B /* WCLShineButton-Info.plist */,
+				B76040452477A778243152E75397AE6D /* WCLShineButton-prefix.pch */,
+				8D6A74E37A1FFF0849793F92B290D3B3 /* WCLShineButton-umbrella.h */,
+				65D05A59CB67281E5FA45631B8AC2E52 /* WCLShineButton.debug.xcconfig */,
+				B0FF91CCD2F4E224CBD6ABCB1AD52E9D /* WCLShineButton.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/WCLShineButton";
+			sourceTree = "<group>";
+		};
+		6785A00227A323D922C4C04EA247B576 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7960EE5F1825C9D3F674F0EE2B06F311 /* Floaty.modulemap */,
+				13029A04F29586184CE9EC08C327F763 /* Floaty-dummy.m */,
+				D23A193F0557B55205BC7793E6F51F77 /* Floaty-Info.plist */,
+				4F600399A30A902EA6B75755A3F89778 /* Floaty-prefix.pch */,
+				111AA0D6871B322D89A2E4D5FEDEA5C9 /* Floaty-umbrella.h */,
+				8E6A13C4261F6601DFDC4E9ABE30D041 /* Floaty.debug.xcconfig */,
+				2F98B639968AFBCD223332780CF86520 /* Floaty.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Floaty";
+			sourceTree = "<group>";
+		};
+		6B19424534FF2512E1CF24FCC5AC5FB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2915C263A5C5C8012A8C1E97512DC6A8 /* Floaty.framework */,
+				0FFC60DDA1808121146D54C9A9DF624F /* Pods_FloatingActionAnimation.framework */,
+				098814983BC053555A485F9F0FE788DC /* WCLShineButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C02AFDB107EB8601F2DD1226111F3DE /* WCLShineButton */ = {
+			isa = PBXGroup;
+			children = (
+				D867563486AC237254C88B5CE7555E63 /* WCLShineAngleLayer.swift */,
+				F1A789F4C509421D77413B15B154CF1A /* WCLShineBundle.swift */,
+				25D33748586CBEE48BFDAAA97BD9A7D0 /* WCLShineButton.swift */,
+				41AF15FEAECF1E92988222C7B47E3926 /* WCLShineClickLayer.swift */,
+				F8B28297623C5E61B9DDA40248382B7E /* WCLShineLayer.swift */,
+				0ED1DE026421728F3A325B1459A10F17 /* WCLShineParams.swift */,
+				3641653D48F71C8D1CEF52988C84579C /* Resources */,
+				5E72C35D46C1CAFF62183EABB21A6A29 /* Support Files */,
+			);
+			name = WCLShineButton;
+			path = WCLShineButton;
 			sourceTree = "<group>";
 		};
 		71C02120A59E214BFE1520F657756D98 /* Pods-FloatingActionAnimation */ = {
@@ -150,13 +242,20 @@
 			path = "Target Support Files/Pods-FloatingActionAnimation";
 			sourceTree = "<group>";
 		};
-		C970FDAC388CAA89EC97FEACC218F321 /* Products */ = {
+		A7628AE9919EF2773E71109BA177CBF4 /* Floaty */ = {
 			isa = PBXGroup;
 			children = (
-				2915C263A5C5C8012A8C1E97512DC6A8 /* Floaty.framework */,
-				0FFC60DDA1808121146D54C9A9DF624F /* Pods_FloatingActionAnimation.framework */,
+				E906745FD63241D24B5A8D7AA5DD1235 /* Floaty.swift */,
+				3E01CB349FB425701A2D6EC8159DDE01 /* FloatyDelegate.swift */,
+				4A427F9DF1EC654C5AB5BB7433F67BD0 /* FloatyItem.swift */,
+				1A876ADEA12B080326108BC9BB65AD03 /* FloatyManager.swift */,
+				1C593D44A000A518FF96294D8B8F4C0E /* FloatyViewController.swift */,
+				6F267D6AA92CA266EC4783069BCDFE32 /* FloatyWindow.swift */,
+				2B9DC366C5994ACCD2B3A5020CD8248A /* UIView+Draggable.swift */,
+				6785A00227A323D922C4C04EA247B576 /* Support Files */,
 			);
-			name = Products;
+			name = Floaty;
+			path = Floaty;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -164,39 +263,15 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				696980B28CB5E0494BE0AA6F2ECCAE4F /* Pods */,
-				C970FDAC388CAA89EC97FEACC218F321 /* Products */,
+				3BE7A3AF900ECAEF9C17D5D7F267F8D7 /* Pods */,
+				6B19424534FF2512E1CF24FCC5AC5FB9 /* Products */,
 				5AC1BDA736EB3D68ACF5C8CE81FAA767 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		F124E2D716358CD0C9159569DD013B35 /* Floaty */ = {
-			isa = PBXGroup;
-			children = (
-				303E2D89DA9C9C4E6B5CF06F68749CD2 /* Floaty.swift */,
-				D28F7D296A55B38B440AFA00E908E50F /* FloatyDelegate.swift */,
-				F88F5640C34608FFDAAE3BEB5FC3A532 /* FloatyItem.swift */,
-				6391585BE75022227AA204C278409A3B /* FloatyManager.swift */,
-				8EF8C2AC86F1A705D6A0065D5E3867A2 /* FloatyViewController.swift */,
-				8365BEC3FD32E0CC0F33EDA7B468CE4A /* FloatyWindow.swift */,
-				E2EA9C00681793849DEE10741D7C2DA2 /* UIView+Draggable.swift */,
-				04CFD3CC0A8AD568E4ADC944CD387D80 /* Support Files */,
-			);
-			name = Floaty;
-			path = Floaty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2DA488271C0574C7C3B0CD05545A5BF3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51CEDBB81DC3B424153D40E1D6D2C974 /* Pods-FloatingActionAnimation-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9D3C84D467248C1E3504D76A0DB6B50F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,26 +280,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B12B00691E429876C85CDC72D13AB9B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42719F081F577389CD7F0303C99F8D94 /* WCLShineButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2047899E0ADFBC115BEE1A9024B6B73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D4CE826AAF54800F10C49417CA4C78B /* Pods-FloatingActionAnimation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		77ABDE0310B7B6B36230DC614B16666A /* Pods-FloatingActionAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBCB2075C866DAD1720D45A3B2B7574D /* Build configuration list for PBXNativeTarget "Pods-FloatingActionAnimation" */;
+			buildConfigurationList = 37C65723953245F16829E857EAC7CFCD /* Build configuration list for PBXNativeTarget "Pods-FloatingActionAnimation" */;
 			buildPhases = (
-				2DA488271C0574C7C3B0CD05545A5BF3 /* Headers */,
-				C3C0E42F19772093FDCEA29920CE3C24 /* Sources */,
-				5BA502253E579270F72DE373D76F938D /* Frameworks */,
-				E0AC29ED2D08DA09004EBDAB9EF831BC /* Resources */,
+				D2047899E0ADFBC115BEE1A9024B6B73 /* Headers */,
+				CBE80E7DF4CB1FC671ACEC54779CCEAE /* Sources */,
+				ACA7B7180A9482FF84EE25FAACE7E647 /* Frameworks */,
+				298B6B7C21FE8B3589341BAA63BCE7D1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				91A8225C60FE474238F307C25A0E2CF4 /* PBXTargetDependency */,
+				2CDEA67C026C9F91B1B5E76974284290 /* PBXTargetDependency */,
+				E37E39660824F8C1A8E911835EC83195 /* PBXTargetDependency */,
 			);
 			name = "Pods-FloatingActionAnimation";
 			productName = "Pods-FloatingActionAnimation";
 			productReference = 0FFC60DDA1808121146D54C9A9DF624F /* Pods_FloatingActionAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C83993C8F5EFBE2ED74A821934C595E9 /* WCLShineButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92386CD5881A0194179FDDDFEE3A281A /* Build configuration list for PBXNativeTarget "WCLShineButton" */;
+			buildPhases = (
+				B12B00691E429876C85CDC72D13AB9B9 /* Headers */,
+				71C169BD0B18F19E3AC32E8A72E4432D /* Sources */,
+				288212C53407592DACBF77469C43489F /* Frameworks */,
+				DA151D6E0776B08AD64C78E1E0C056B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCLShineButton;
+			productName = WCLShineButton;
+			productReference = 098814983BC053555A485F9F0FE788DC /* WCLShineButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D2A775A88EA787684F2905BCB73F96D1 /* Floaty */ = {
@@ -263,17 +373,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C970FDAC388CAA89EC97FEACC218F321 /* Products */;
+			productRefGroup = 6B19424534FF2512E1CF24FCC5AC5FB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D2A775A88EA787684F2905BCB73F96D1 /* Floaty */,
 				77ABDE0310B7B6B36230DC614B16666A /* Pods-FloatingActionAnimation */,
+				C83993C8F5EFBE2ED74A821934C595E9 /* WCLShineButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		298B6B7C21FE8B3589341BAA63BCE7D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBC138CB7B5E9B7C7EC2FBDBF14E1373 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,16 +399,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0AC29ED2D08DA09004EBDAB9EF831BC /* Resources */ = {
+		DA151D6E0776B08AD64C78E1E0C056B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D6EC0C91CBAA5E1FFBF2EB30982EBD /* WCLShineButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		71C169BD0B18F19E3AC32E8A72E4432D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82FD19E901B1CA44502C6D11812982E1 /* WCLShineAngleLayer.swift in Sources */,
+				7F91E347D1CDCC342F28CE918CCE71E7 /* WCLShineBundle.swift in Sources */,
+				D7D702E98AC1E133E09F5B6C2A54A6CF /* WCLShineButton-dummy.m in Sources */,
+				8C8B6FA1A214E7C14E99C9AD49E59BA0 /* WCLShineButton.swift in Sources */,
+				17D29B80E3F0E0B6459DC7E33AF140CA /* WCLShineClickLayer.swift in Sources */,
+				EC3E9858A70131522B060F0016FA4374 /* WCLShineLayer.swift in Sources */,
+				205729B4AF44304859D69C642726E51E /* WCLShineParams.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85E563CDDA92B3A286725E86808E42B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,29 +439,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3C0E42F19772093FDCEA29920CE3C24 /* Sources */ = {
+		CBE80E7DF4CB1FC671ACEC54779CCEAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2E5D7EFC25BE3964B41BB532BC8753 /* Pods-FloatingActionAnimation-dummy.m in Sources */,
+				FECC6BF6FDD1B72BC614DB0234E6849E /* Pods-FloatingActionAnimation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		91A8225C60FE474238F307C25A0E2CF4 /* PBXTargetDependency */ = {
+		2CDEA67C026C9F91B1B5E76974284290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Floaty;
 			target = D2A775A88EA787684F2905BCB73F96D1 /* Floaty */;
-			targetProxy = 84C4DC8E7CCA63190B7625DC31B0EA1D /* PBXContainerItemProxy */;
+			targetProxy = F8D33CF43525F5BABFA630A0E7A47943 /* PBXContainerItemProxy */;
+		};
+		E37E39660824F8C1A8E911835EC83195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WCLShineButton;
+			target = C83993C8F5EFBE2ED74A821934C595E9 /* WCLShineButton */;
+			targetProxy = D2246C083737CE9EEDB68900E2C7CA5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		32F96539D9E12447CF0E4C997C0161C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D05A59CB67281E5FA45631B8AC2E52 /* WCLShineButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WCLShineButton/WCLShineButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WCLShineButton/WCLShineButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WCLShineButton/WCLShineButton.modulemap";
+				PRODUCT_MODULE_NAME = WCLShineButton;
+				PRODUCT_NAME = WCLShineButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		572AECB8B86A9F7E93009217C2C8D38F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27042E2F2C36187E70B2ADA606B6B58B /* Floaty.debug.xcconfig */;
+			baseConfigurationReference = 8E6A13C4261F6601DFDC4E9ABE30D041 /* Floaty.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -361,9 +534,9 @@
 			};
 			name = Debug;
 		};
-		B09E7362A5BD4D323C49ABA75D54E232 /* Debug */ = {
+		83BD97AB4FED40A60593DDA50FCC908B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55A1807FB0DD9621FC6C9539DA5B556D /* Pods-FloatingActionAnimation.debug.xcconfig */;
+			baseConfigurationReference = 90A367CABD2224A3884A79C2A26D11DA /* Pods-FloatingActionAnimation.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -393,14 +566,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		BBE3CF84084BF10D6F3DDE42AC012962 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA0593E89DE2372F7146A9E2B435ED1 /* Floaty.release.xcconfig */;
+			baseConfigurationReference = 2F98B639968AFBCD223332780CF86520 /* Floaty.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -562,9 +736,44 @@
 			};
 			name = Release;
 		};
-		F784B991E473EF003BD53656561277D4 /* Release */ = {
+		C8ABF9A088FCD8B3C3644B65EF1C490C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90A367CABD2224A3884A79C2A26D11DA /* Pods-FloatingActionAnimation.release.xcconfig */;
+			baseConfigurationReference = B0FF91CCD2F4E224CBD6ABCB1AD52E9D /* WCLShineButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WCLShineButton/WCLShineButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WCLShineButton/WCLShineButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WCLShineButton/WCLShineButton.modulemap";
+				PRODUCT_MODULE_NAME = WCLShineButton;
+				PRODUCT_NAME = WCLShineButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E88A04C498B5119D318C79126F51C6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A1807FB0DD9621FC6C9539DA5B556D /* Pods-FloatingActionAnimation.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -594,15 +803,23 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		37C65723953245F16829E857EAC7CFCD /* Build configuration list for PBXNativeTarget "Pods-FloatingActionAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88A04C498B5119D318C79126F51C6A1 /* Debug */,
+				83BD97AB4FED40A60593DDA50FCC908B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -621,11 +838,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBCB2075C866DAD1720D45A3B2B7574D /* Build configuration list for PBXNativeTarget "Pods-FloatingActionAnimation" */ = {
+		92386CD5881A0194179FDDDFEE3A281A /* Build configuration list for PBXNativeTarget "WCLShineButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B09E7362A5BD4D323C49ABA75D54E232 /* Debug */,
-				F784B991E473EF003BD53656561277D4 /* Release */,
+				32F96539D9E12447CF0E4C997C0161C2 /* Debug */,
+				C8ABF9A088FCD8B3C3644B65EF1C490C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

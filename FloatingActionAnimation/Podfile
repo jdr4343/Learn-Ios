@@ -10,6 +10,6 @@ target 'FloatingActionAnimation' do
 
 
 pod 'Floaty'
-
+pod 'WCLShineButton'
 
 end

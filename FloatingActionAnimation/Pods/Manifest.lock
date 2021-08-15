@@ -1,16 +1,20 @@
 PODS:
   - Floaty (4.2.0)
+  - WCLShineButton (1.0.8)
 
 DEPENDENCIES:
   - Floaty
+  - WCLShineButton
 
 SPEC REPOS:
   trunk:
     - Floaty
+    - WCLShineButton
 
 SPEC CHECKSUMS:
   Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  WCLShineButton: 315ee9b0024b1cc56dba34fb6a8878937eb8d0b1
 
-PODFILE CHECKSUM: e2c1d837c4bce0db6b4898aa6ac2986a2f606622
+PODFILE CHECKSUM: 813e1a270e355645280d3909f10db33d04dacd34
 
 COCOAPODS: 1.10.1
