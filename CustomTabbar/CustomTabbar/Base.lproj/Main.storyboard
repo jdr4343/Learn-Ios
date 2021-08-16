@@ -62,6 +62,7 @@
         <!--Custom Tab BarVC-->
         <scene sceneID="4Zb-t5-ezu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UJ-ta-zfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="BRu-S6-L8G" customClass="CustomTabBarVC" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F2g-kt-6iB" customClass="HighTabBarVC" customModule="CustomTabbar" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -74,7 +75,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jyd-Da-F34"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4UJ-ta-zfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-517" y="-466"/>
         </scene>

@@ -17,12 +17,13 @@ class CustomTabBarVC: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         self.delegate = self
         self.selectedIndex = 1
-        
+        print("error")
         setupMiddleButton()
     }
     
     func setupMiddleButton() {
-        //버튼 크기
+        //버튼
+        print("erroe")
         let middelButton = UIButton(frame: CGRect(x: (self.view.bounds.width/2)-25,
                                                   y: -20,
                                                   width: 60,
