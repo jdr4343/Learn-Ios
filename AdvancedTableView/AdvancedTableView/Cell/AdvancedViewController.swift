@@ -8,14 +8,14 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class AdvancedViewController: UIViewController {
 
     //테이블 뷰 생성
     private let table: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         //셀 등록
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        table.register(CollectionTableViewCell.self, forCellReuseIdentifier: CollectionTableViewCell.identifier)
+        table.register(AdvancedCollectionTableViewCell.self, forCellReuseIdentifier: AdvancedCollectionTableViewCell.identifier)
         return table
     }()
     
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
 
 
 }
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension AdvancedViewController: UITableViewDelegate, UITableViewDataSource {
     //모델 배열의 행 반환
     func numberOfSections(in tableView: UITableView) -> Int {
         return models.count
@@ -104,8 +104,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
             
         case .collectionView(let models, _):
-            let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier,
-                                                     for: indexPath) as! CollectionTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: AdvancedCollectionTableViewCell.identifier,
+                                                     for: indexPath) as! AdvancedCollectionTableViewCell
             cell.configure(with: models)
             cell.delegate = self
             return cell
@@ -132,7 +132,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 //각 셀에 delegate를 연결하고 하나를 탭할때 delegate를 통해 릴링하기 때문에 적절한 항목이 인쇄됩니다.
-extension ViewController: CollectionTableViewCellDelegate {
+extension AdvancedViewController: AdvancedCollectionTableViewCellDelegate {
     func didSelectItem(with model: CollectionTableCellModel) {
         print("Selected \(model.title) ")
     }

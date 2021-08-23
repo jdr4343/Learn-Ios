@@ -1,5 +1,5 @@
 //
-//  CollectionTableViewCell.swift
+//  AdvancedCollectionTableViewCell.swift
 //  AdvancedTableView
 //
 //  Created by 신지훈 on 2021/08/12.
@@ -8,17 +8,17 @@
 import UIKit
 
 //델리게이트
-protocol CollectionTableViewCellDelegate: AnyObject {
+protocol AdvancedCollectionTableViewCellDelegate: AnyObject {
     func didSelectItem(with model: CollectionTableCellModel)
 }
 
 
 
-class CollectionTableViewCell: UITableViewCell {
+class AdvancedCollectionTableViewCell: UITableViewCell {
 
-    public weak var delegate: CollectionTableViewCellDelegate?
+    public weak var delegate: AdvancedCollectionTableViewCellDelegate?
     
-    static let identifier = "CollectionTableViewCell"
+    static let identifier = "AdvancedCollectionTableViewCell"
     //컬렉션 뷰 생성 /이니셜라이저에서 설정
     private let collectionView: UICollectionView
     
@@ -32,7 +32,7 @@ class CollectionTableViewCell: UITableViewCell {
         layout.itemSize = CGSize(width: 170, height: 170)
         layout.sectionInset = UIEdgeInsets(top: 3,
                                            left: 3,
-                                           bottom: 3,
+                                           bottom: 15,
                                            right: 3)
         
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -64,7 +64,7 @@ class CollectionTableViewCell: UITableViewCell {
     }
 }
 
-extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension AdvancedCollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
